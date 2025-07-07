@@ -1,0 +1,14 @@
+name: ceonlp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - google-cloud-bigquery
+  - tqdm
+  - transformers
+  - pytorch
+  - statsmodels
+  - seaborn
+  - matplotlib
+  - reportlab
