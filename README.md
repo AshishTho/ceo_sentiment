@@ -1,6 +1,6 @@
 # CEO Resignation – Reddit Sentiment Analysis
 
-WIP 
+WIP Day 2
 
 Tracks r/stocks sentiment ±7 days around leadership changes.
 
