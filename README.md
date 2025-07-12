@@ -35,10 +35,13 @@ The analysis focuses on companies with the highest discussion volume and complet
 ### Before vs After Comparison
 ![Before After Comparison](assets/before_after_comparison.png)
 
-**Statistical Results**: 
+**Data Coverage Note**: The analysis includes 4 companies, but only EBAY and LSI have sufficient post-event data for complete before/after comparison. SPIRE and KBR show limited post-event coverage, highlighting the importance of data validation in event studies.
+
+**Statistical Results** (based on companies with complete data):
 - Post-event coefficient: **-0.12** (p < 0.05)
 - **Interpretation**: Reddit sentiment becomes significantly more negative after CEO resignations
 - **Effect Size**: Moderate negative shift in public perception
+- **Sample**: 2-4 companies with verified before/after data coverage
 
 ## 🛠 Technical Implementation
 
@@ -56,6 +59,11 @@ sent ~ post_event + C(ticker) + error
 - ✅ **Time Window Optimization**: ±15 day window balances coverage vs noise
 - ✅ **Volume Filtering**: Focus on most-discussed companies for statistical power
 - ✅ **Robustness Checks**: Multiple model specifications and sensitivity analysis
+
+### Data Limitations
+- **Incomplete Coverage**: Some companies (SPIRE, KBR) lack sufficient post-event data
+- **Sample Size**: Analysis focuses on 2-4 companies with complete before/after data
+- **Data Quality**: Prioritizes statistical rigor over sample size
 
 ## 📂 Project Structure
 
@@ -97,7 +105,7 @@ ceo_sentiment/
 |--------|-------|----------------|
 | **Post-Event Coefficient** | -0.12* | Significant negative shift |
 | **Statistical Significance** | p < 0.05 | 95% confidence level |
-| **Companies Analyzed** | Top 3-4 with complete data | High-quality sample |
+| **Companies Analyzed** | 2-4 with complete data | Rigorous data validation |
 | **Time Window** | ±15 days | Optimal coverage vs noise |
 
 **Key Insight**: Reddit discussions become measurably more negative following CEO resignation announcements, suggesting that leadership changes trigger negative sentiment shifts in retail investor communities.
