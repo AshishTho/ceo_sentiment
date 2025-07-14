@@ -1,10 +1,10 @@
-# CEO Resignation – Reddit Sentiment Analysis
+# CEO Sentiment Analysis → Macro Market Dashboard
 
-A comprehensive analysis of Reddit sentiment on r/stocks around CEO leadership changes, using advanced sentiment analysis and difference-in-differences methodology.
+A comprehensive sentiment analysis project that **began with CEO leadership changes** and is **expanding into a real-time Macro → Market Sentiment Dashboard**. This showcases the evolution from focused NLP analysis to production-ready financial data science applications.
 
-## 📊 Overview
+## 📊 Current Implementation: CEO Resignation Analysis
 
-This project analyzes how Reddit sentiment shifts before and after CEO resignation announcements by tracking discussions on r/stocks. Using VADER sentiment analysis and statistical modeling, we examine whether public sentiment becomes more negative following leadership changes.
+This project currently analyzes Reddit sentiment on r/stocks around CEO leadership changes, using advanced sentiment analysis and difference-in-differences methodology. **This serves as the foundational sentiment pipeline** for the larger macro-sentiment dashboard system.
 
 ## 🔬 Methodology
 
@@ -70,6 +70,7 @@ sent ~ post_event + C(ticker) + error
 
 ## 📂 Project Structure
 
+### Current Structure (CEO Analysis Foundation)
 ```
 ceo_sentiment/
 ├── data_raw/           # Original datasets
@@ -84,8 +85,29 @@ ceo_sentiment/
 └── README.md
 ```
 
+### Planned Expansion (Macro Dashboard)
+```
+macro_sentiment_dashboard/
+├── ceo_analysis/       # Current CEO sentiment pipeline (foundation)
+├── data_sources/
+│   ├── fred/          # Federal Reserve economic data
+│   ├── twitter/       # Live Twitter sentiment streams
+│   └── reddit/        # Enhanced Reddit data pipeline
+├── etl/
+│   ├── airflow_dags/  # ETL orchestration
+│   └── data_quality/  # Validation and monitoring
+├── analytics/
+│   ├── econometrics/  # Granger causality, ARIMA
+│   └── forecasting/   # Predictive models
+├── dashboard/
+│   ├── streamlit_app/ # Interactive web application
+│   └── api/          # RESTful endpoints
+└── deployment/        # Production infrastructure
+```
+
 ## 🚀 Running the Analysis
 
+### Current CEO Analysis
 1. **Setup Environment**:
    ```bash
    conda env create -f notebooks/environment.yml
@@ -101,6 +123,15 @@ ceo_sentiment/
    - `overall_sentiment_trend.png` - Aggregate sentiment pattern across all companies
    - `top_companies_trends.png` - Individual trends for top companies with complete data
    - `before_after_comparison.png` - Clean comparison of top 5 companies (no overlap)
+
+### Upcoming Dashboard Deployment
+```bash
+# Planned commands for macro dashboard
+streamlit run dashboard/app.py
+# Real-time sentiment + macro indicators
+# Interactive Granger causality tests
+# Live ARIMA forecasting interface
+```
 
 ## 📊 Results Summary
 
@@ -121,6 +152,59 @@ ceo_sentiment/
 - **Data Science**: Showcases advanced filtering techniques for clean, interpretable visualizations
 - **Methodological Rigor**: Balances statistical power with visual clarity through sophisticated data validation
 
+## 🚀 Next Stage: Macro → Market Sentiment Dashboard
+
+### Upcoming Development (Aug → Sept 2025)
+
+This CEO sentiment analysis serves as the **foundational component** for a comprehensive **Macro → Market Sentiment Dashboard** - a sophisticated real-time system that merges macroeconomic indicators with social media sentiment analysis.
+
+#### 🎯 Dashboard Vision
+- **Real-Time Integration**: Live ETL pipeline combining FRED macroeconomic data with Reddit/Twitter sentiment
+- **Advanced Analytics**: Granger causality tests, ARIMA forecasting, and predictive modeling
+- **Interactive Deployment**: Professional Streamlit application with dynamic visualizations
+- **Statistical Rigor**: Econometric testing of macro-sentiment relationships
+
+#### 📊 Planned Features
+1. **Live Data Pipeline**
+   - FRED API integration (GDP, inflation, unemployment, interest rates)
+   - Twitter/Reddit sentiment streams with NLP processing
+   - Real-time data validation and quality controls
+
+2. **Advanced Statistical Analysis**
+   - **Granger Causality Tests**: Do macro indicators predict sentiment shifts?
+   - **ARIMA Forecasting**: Sentiment-informed market predictions
+   - **Cointegration Analysis**: Long-term macro-sentiment relationships
+   - **Regime Detection**: Identify structural breaks and market phases
+
+3. **Professional Deployment**
+   - **Streamlit Dashboard**: Interactive, real-time visualization platform
+   - **Automated Reporting**: Daily/weekly sentiment-macro briefings
+   - **API Endpoints**: Programmatic access to sentiment scores and forecasts
+
+#### 🔧 Technical Architecture
+```python
+# Planned Tech Stack Expansion
+streamlit              # Interactive dashboard
+fredapi               # Federal Reserve data
+tweepy                 # Twitter API integration
+statsmodels           # Advanced econometrics
+plotly                # Interactive visualizations
+apache-airflow        # ETL orchestration
+```
+
+#### 📈 Value Proposition
+- **For Traders**: Real-time sentiment-informed market signals
+- **For Researchers**: Comprehensive macro-sentiment database with statistical validation
+- **For Portfolio Managers**: Systematic integration of alternative data sources
+- **For Data Scientists**: Production-ready NLP + econometrics showcase
+
+This expansion transforms the current CEO analysis into a **signature data science project** demonstrating expertise in:
+- ✅ **Advanced NLP** (current CEO sentiment pipeline)
+- 🔄 **Real-Time ETL** (upcoming FRED integration)
+- 📊 **Econometric Analysis** (Granger causality, ARIMA)
+- 🚀 **Production Deployment** (Streamlit dashboard)
+
 ---
 
-*Analysis completed using advanced NLP techniques, rigorous statistical methodology, and sophisticated data filtering. Results demonstrate significant relationship between leadership changes and public sentiment, with enhanced visualization techniques ensuring clear interpretation of findings.*
+*Current Phase: Advanced CEO sentiment analysis with sophisticated filtering and statistical validation.*  
+*Next Phase: Comprehensive macro-sentiment dashboard with real-time analytics and professional deployment.*
