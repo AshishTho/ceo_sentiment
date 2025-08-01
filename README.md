@@ -1,7 +1,5 @@
 # CEO Sentiment Analysis → Macro Market Dashboard
 
-WIP
-
 A comprehensive sentiment analysis project that **began with CEO leadership changes** and is **expanding into a real-time Macro → Market Sentiment Dashboard**. This showcases the evolution from focused NLP analysis to production-ready financial data science applications.
 
 ## 📊 Current Implementation: CEO Resignation Analysis
